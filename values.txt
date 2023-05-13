@@ -1,0 +1,11 @@
+
+FirstName: Evgeny
+LastName: Savonkin
+Day of birth: 4
+Month of birth: January
+Year of birth: 2005
+CardNumber: 123456789123456789
+Email: pozhiloy123@gmail.com
+PhoneNumber: +375256854957
+City: Minsk
+Password: qwerty

@@ -1,5 +1,4 @@
-package com.example.igor5lab;
-
+package com.evgeny.order;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

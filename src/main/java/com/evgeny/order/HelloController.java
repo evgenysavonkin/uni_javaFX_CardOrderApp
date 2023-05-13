@@ -1,4 +1,4 @@
-package com.example.igor5lab;
+package com.evgeny.order;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
