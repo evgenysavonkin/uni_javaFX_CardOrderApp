@@ -16,10 +16,9 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class HelloApplication extends Application {
+public class Main extends Application {
     @Override
     public void start(Stage stage){
-
         HBox registry = new HBox();
         Label reg = new Label("Регистрация");
         reg.setFont(new Font(24));
@@ -100,7 +99,6 @@ public class HelloApplication extends Application {
         email.setAlignment(Pos.CENTER);
         HBox.setMargin(emailBox, new Insets(20.0,0,0,0));
         email.getChildren().add(emailBox);
-        //
         HBox num = new HBox();
         VBox numBox = new VBox();
         Text numEntry = new Text("Введите ваш номер телефона:");
@@ -196,7 +194,7 @@ public class HelloApplication extends Application {
                             "\nYear of birth: " + years.getValue() + "\nCardNumber: " + inputCard.getText() +
                             "\nEmail: " + inputEmail.getText() + "\nPhoneNumber: " + inputNum.getText() +
                             "\nCity: " + obls.getValue() + "\nPassword: " + passw1.getText();
-                    FileActions.openfile();
+                    FileActions.openFile();
                     FileActions.file.seek(FileActions.file.length());
                     FileActions.file.writeBytes(data);
                     FileActions.file.close();
@@ -231,8 +229,8 @@ public class HelloApplication extends Application {
         stage.setTitle("Регистрация карточки");
         stage.show();
     }
-    public static ArrayList getYear(){
-        ArrayList year = new ArrayList();
+    public static ArrayList<Integer> getYear(){
+        ArrayList<Integer> year = new ArrayList<>();
         int count = 2007;
         while (count>= 1950){
             year.add(count);
